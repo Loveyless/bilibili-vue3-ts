@@ -1,18 +1,17 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <!-- 头部组件 -->
+  <AppHeader />
+  <!-- 频道组件 -->
+  <HomeChannel />
+  <!-- 轮播图 -->
+  <HomeSwipe />
+  <!-- 视频列表 -->
+  <HomeVideoList />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-export default defineComponent({
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-});
+<script setup lang="ts">
+import AppHeader from "../components/app-header.vue";
+import HomeChannel from "../components/home-channel.vue";
+import HomeSwipe from "../components/home-swipe.vue"
+import HomeVideoList from "../components/home-video-list.vue"
 </script>
